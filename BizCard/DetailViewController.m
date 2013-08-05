@@ -8,9 +8,12 @@
 
 #import "DetailViewController.h"
 
+
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
+
+
 @end
 
 @implementation DetailViewController
@@ -69,4 +72,11 @@
     self.masterPopoverController = nil;
 }
 
+- (IBAction)closeButtonPressed:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        //
+    }];
+
+}
 @end

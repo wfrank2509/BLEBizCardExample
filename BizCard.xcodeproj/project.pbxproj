@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36450148177E0EE900E45BF2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36450147177E0EE900E45BF2 /* Media.xcassets */; };
 		36556D67174BCFFD00513F70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36556D66174BCFFD00513F70 /* UIKit.framework */; };
 		36556D69174BCFFD00513F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36556D68174BCFFD00513F70 /* Foundation.framework */; };
 		36556D6B174BCFFD00513F70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36556D6A174BCFFD00513F70 /* CoreGraphics.framework */; };
@@ -18,13 +19,14 @@
 		36556D7D174BCFFD00513F70 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36556D7C174BCFFD00513F70 /* Default@2x.png */; };
 		36556D7F174BCFFD00513F70 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36556D7E174BCFFD00513F70 /* Default-568h@2x.png */; };
 		36556D82174BCFFD00513F70 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36556D80174BCFFD00513F70 /* MainStoryboard_iPhone.storyboard */; };
-		36556D85174BCFFD00513F70 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36556D83174BCFFD00513F70 /* MainStoryboard_iPad.storyboard */; };
-		36556D88174BCFFD00513F70 /* BizCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36556D86174BCFFD00513F70 /* BizCard.xcdatamodeld */; };
 		36556D8B174BCFFD00513F70 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36556D8A174BCFFD00513F70 /* MasterViewController.m */; };
-		36556D8E174BCFFD00513F70 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36556D8D174BCFFD00513F70 /* DetailViewController.m */; };
+		36B66CCD174BD1A300753EDD /* BizCardServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B66CCC174BD1A300753EDD /* BizCardServer.m */; };
+		36B66CCF174BD1BF00753EDD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B66CCE174BD1BF00753EDD /* CoreBluetooth.framework */; };
+		36FA190117622B520039092B /* BizCardClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FA190017622B520039092B /* BizCardClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36450147177E0EE900E45BF2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = BizCard/Media.xcassets; sourceTree = "<group>"; };
 		36556D63174BCFFD00513F70 /* BizCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BizCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36556D66174BCFFD00513F70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		36556D68174BCFFD00513F70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,12 +42,15 @@
 		36556D7C174BCFFD00513F70 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		36556D7E174BCFFD00513F70 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		36556D81174BCFFD00513F70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		36556D84174BCFFD00513F70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		36556D87174BCFFD00513F70 /* BizCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BizCard.xcdatamodel; sourceTree = "<group>"; };
 		36556D89174BCFFD00513F70 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		36556D8A174BCFFD00513F70 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		36556D8C174BCFFD00513F70 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		36556D8D174BCFFD00513F70 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		36B42F9417981CC600B28894 /* BizCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BizCard.entitlements; sourceTree = "<group>"; };
+		36B66CCB174BD1A300753EDD /* BizCardServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BizCardServer.h; sourceTree = "<group>"; };
+		36B66CCC174BD1A300753EDD /* BizCardServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BizCardServer.m; sourceTree = "<group>"; };
+		36B66CCE174BD1BF00753EDD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		36FA18FF17622B520039092B /* BizCardClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BizCardClient.h; sourceTree = "<group>"; };
+		36FA190017622B520039092B /* BizCardClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BizCardClient.m; sourceTree = "<group>"; };
+		36FA1902176607470039092B /* BizCardService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BizCardService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36B66CCF174BD1BF00753EDD /* CoreBluetooth.framework in Frameworks */,
 				36556D67174BCFFD00513F70 /* UIKit.framework in Frameworks */,
 				36556D69174BCFFD00513F70 /* Foundation.framework in Frameworks */,
 				36556D6B174BCFFD00513F70 /* CoreGraphics.framework in Frameworks */,
@@ -66,6 +72,7 @@
 		36556D5A174BCFFD00513F70 = {
 			isa = PBXGroup;
 			children = (
+				36450147177E0EE900E45BF2 /* Media.xcassets */,
 				36556D6E174BCFFD00513F70 /* BizCard */,
 				36556D65174BCFFD00513F70 /* Frameworks */,
 				36556D64174BCFFD00513F70 /* Products */,
@@ -83,6 +90,7 @@
 		36556D65174BCFFD00513F70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36B66CCE174BD1BF00753EDD /* CoreBluetooth.framework */,
 				36556D66174BCFFD00513F70 /* UIKit.framework */,
 				36556D68174BCFFD00513F70 /* Foundation.framework */,
 				36556D6A174BCFFD00513F70 /* CoreGraphics.framework */,
@@ -94,16 +102,18 @@
 		36556D6E174BCFFD00513F70 /* BizCard */ = {
 			isa = PBXGroup;
 			children = (
+				36B42F9417981CC600B28894 /* BizCard.entitlements */,
+				36FA1902176607470039092B /* BizCardService.h */,
 				36556D77174BCFFD00513F70 /* AppDelegate.h */,
 				36556D78174BCFFD00513F70 /* AppDelegate.m */,
 				36556D80174BCFFD00513F70 /* MainStoryboard_iPhone.storyboard */,
-				36556D83174BCFFD00513F70 /* MainStoryboard_iPad.storyboard */,
 				36556D89174BCFFD00513F70 /* MasterViewController.h */,
 				36556D8A174BCFFD00513F70 /* MasterViewController.m */,
-				36556D8C174BCFFD00513F70 /* DetailViewController.h */,
-				36556D8D174BCFFD00513F70 /* DetailViewController.m */,
-				36556D86174BCFFD00513F70 /* BizCard.xcdatamodeld */,
 				36556D6F174BCFFD00513F70 /* Supporting Files */,
+				36B66CCB174BD1A300753EDD /* BizCardServer.h */,
+				36B66CCC174BD1A300753EDD /* BizCardServer.m */,
+				36FA18FF17622B520039092B /* BizCardClient.h */,
+				36FA190017622B520039092B /* BizCardClient.m */,
 			);
 			path = BizCard;
 			sourceTree = "<group>";
@@ -150,6 +160,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "arconsis IT-Solutions GmbH";
+				TargetAttributes = {
+					36556D62174BCFFD00513F70 = {
+						DevelopmentTeam = 2NZX5Q2ESG;
+					};
+				};
 			};
 			buildConfigurationList = 36556D5E174BCFFD00513F70 /* Build configuration list for PBXProject "BizCard" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -177,8 +192,8 @@
 				36556D7B174BCFFD00513F70 /* Default.png in Resources */,
 				36556D7D174BCFFD00513F70 /* Default@2x.png in Resources */,
 				36556D7F174BCFFD00513F70 /* Default-568h@2x.png in Resources */,
+				36450148177E0EE900E45BF2 /* Media.xcassets in Resources */,
 				36556D82174BCFFD00513F70 /* MainStoryboard_iPhone.storyboard in Resources */,
-				36556D85174BCFFD00513F70 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,9 +206,9 @@
 			files = (
 				36556D75174BCFFD00513F70 /* main.m in Sources */,
 				36556D79174BCFFD00513F70 /* AppDelegate.m in Sources */,
-				36556D88174BCFFD00513F70 /* BizCard.xcdatamodeld in Sources */,
 				36556D8B174BCFFD00513F70 /* MasterViewController.m in Sources */,
-				36556D8E174BCFFD00513F70 /* DetailViewController.m in Sources */,
+				36B66CCD174BD1A300753EDD /* BizCardServer.m in Sources */,
+				36FA190117622B520039092B /* BizCardClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +229,6 @@
 				36556D81174BCFFD00513F70 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		36556D83174BCFFD00513F70 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36556D84174BCFFD00513F70 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -288,10 +295,13 @@
 		36556D92174BCFFD00513F70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BizCard/BizCard-Prefix.pch";
 				INFOPLIST_FILE = "BizCard/BizCard-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -299,10 +309,13 @@
 		36556D93174BCFFD00513F70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BizCard/BizCard-Prefix.pch";
 				INFOPLIST_FILE = "BizCard/BizCard-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -326,21 +339,9 @@
 				36556D93174BCFFD00513F70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		36556D86174BCFFD00513F70 /* BizCard.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				36556D87174BCFFD00513F70 /* BizCard.xcdatamodel */,
-			);
-			currentVersion = 36556D87174BCFFD00513F70 /* BizCard.xcdatamodel */;
-			path = BizCard.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 36556D5B174BCFFD00513F70 /* Project object */;
 }

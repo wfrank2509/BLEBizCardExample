@@ -10,13 +10,15 @@
 
 @class DetailViewController;
 
-#import <CoreData/CoreData.h>
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface MasterViewController : UIViewController
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) IBOutlet UILabel *labelMode;
+
+
+- (IBAction)buttonClientModePressed:(id)sender;
+- (IBAction)buttonServerModePressed:(id)sender;
 
 @end
